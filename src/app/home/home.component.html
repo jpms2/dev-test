@@ -1,0 +1,25 @@
+<div class="cd-top-nav">
+	<img class="cd-icon" src="https://puu.sh/zW2tw/5bd738122b.png" (click)="filterClasses(filterInput.value)">
+	<input type="text"  #filterInput placeholder="Escolha o filtro..." class="cd-search-box">
+	<button  class="cd-button" (click)="clearFilters()" (click)="filterInput.value = null">Limpar</button>
+</div>
+<div style="margin-top: 5%;">
+	<div *ngFor="let item of filtered_info">
+		<mat-card class="cd-card" [ngClass]="{'color-red': item.areaconhecimento_descricao == 'Ciências Humanas', 'color-aqua': item.areaconhecimento_descricao == 'Ciências da Natureza', 'color-silver': item.areaconhecimento_descricao == 'Linguagens e Códigos', 'color-lime': item.areaconhecimento_descricao == 'Matemática'}">
+			<mat-card-title>
+				<b>{{item.aula_descricao}}</b>
+			</mat-card-title>
+
+			<mat-card-content>
+				{{item.modulo_descricao}} - {{item.disciplina_descricao}} <br>
+				{{item.areaconhecimento_descricao}}
+			</mat-card-content>
+
+			<mat-card-actions>
+				<button class="cd-button-card">ASSISTIR</button>
+			</mat-card-actions>
+		</mat-card>
+	</div>		
+</div>
+
+

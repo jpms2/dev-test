@@ -1,0 +1,19 @@
+<img src="https://puu.sh/zVo1K/b6d2ca689c.png" class="cd-img"/>
+
+<form #signupForm="ngForm" (ngSubmit)="validate(signupForm)" class="cd-form" >
+
+  <div class="cd-form-text"> e-mail*</div>
+  <input type="text" name="email" id="email" ngModel class="cd-form-boxes"><br>
+  <p class="cd-error-message" *ngIf="signupForm.value.email == '' && (signupForm.submitted || signupForm.value.email.dirty)">O campo e-mail é obrigatório</p>
+
+  <div class="cd-form-text">senha*</div>
+  <input type="password" name="password" id="password" ngModel class="cd-form-boxes">
+  <p class="cd-error-message" *ngIf="signupForm.value.password == '' && (signupForm.submitted || signupForm.value.password.dirty)">O campo senha é obrigatório</p>
+
+  <p class="cd-error-message" *ngIf="failedValidation">{{error}}</p>
+
+  <button type="submit" class="cd-button">ENTRAR</button>
+
+</form>
+
+<div class="cd-forgot-password">Esqueceu sua senha?</div>

@@ -1,0 +1,44 @@
+.cd-form{
+	margin-top: 5%;
+	color: gray;
+	font-size: 10px;
+}
+
+.cd-form-text{
+	margin-top: 5%;
+	margin-left: 5%;
+}
+
+.cd-form-boxes{
+	border: none;
+	border-bottom: 1px solid gray;
+	width: 90%;
+	margin-left: 5%;
+}
+
+.cd-button{
+	background-color: #4CAF50;
+    border: none;
+    color: white;
+	margin-top: 10%;
+	width: 90%;
+	height: 40px;
+	margin-left: 5%;
+}
+
+.cd-img{
+	display: block;
+	width: 100%;
+}
+
+.cd-forgot-password{
+	font-size: 12px;
+	color: #4CAF50;
+	margin-top: 5px;
+	text-align: center;
+}
+
+.cd-error-message{
+	color: red;
+	margin-left: 5%;
+}

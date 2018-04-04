@@ -1,0 +1,54 @@
+.color-red{
+	background-color: #FF4136;
+}
+.color-aqua{
+	background-color: #0074D9;
+}
+.color-silver {
+	background-color: #DDDDDD;
+}
+.color-lime{
+	background-color: #01FF70;
+}
+
+.cd-top-nav{
+	overflow: hidden;
+	border: 1px solid gray;
+}
+
+.cd-search-box{
+	width: 70%;
+	border: none;
+	margin-left: 12%;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.cd-icon{
+	margin-left: 5%;
+	margin-top: 5px;
+	position: absolute;
+}
+
+.cd-button{
+    color: black;
+    font-size: 9px;
+    margin-top: 5px; 
+    margin-bottom: 5px;
+}
+
+.cd-button-card{
+	background-color: transparent;
+	border-radius: 25px;
+    border: 1px solid gray;
+    color: black;
+    font-size: 15px;
+}
+
+.cd-card{
+	display: inline-block;
+	height: 120px;
+	width: 283px;
+	border: 1px solid white;
+	float: left;
+}
